@@ -1,0 +1,43 @@
+body {
+    font-family: 'Poppinis' , sans-serif;
+}
+
+#btn-alert {
+    border: none;
+    border-radius: 5px;
+    padding: 7px 10px;
+    background-color: rgb(62, 62, 232);
+    font-size: 1.3em;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+    position: fixed;
+    left: 45%;
+    top: 45%;
+}
+
+#btn-alert:hover {
+    opacity: 0.8s;
+}
+#btn-alert:focus {
+    outline: rgb(62, 62, 232) solid 3px;
+    outline-offset: 3px;
+}
+
+.balon img {
+    display: inline-block;
+    position: absolute;
+    z-index: -4;
+    width: 300px;
+}
+
+@media (max-width: 576px){
+    #btn-alert {
+        left: 35%;
+        top: 45%;
+    }
+}
